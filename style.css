@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1516053256215-94022213b13c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#circle{
+    width: 200vh;
+    height: 200vh;
+    /* background-color: yellowgreen; */
+    border-radius: 50%;
+    position: absolute;
+    left: -120vh;
+    top: 50%;
+    transform: translate(0,-50%) rotate(50deg);
+    border: 1px solid black;
+}
+.strip{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    /* background-color: whitesmoke; */
+    left: 50%;
+    top: 50%;
+    transform: translate(0,-50%);
+    transform-origin: 0% 50%;
+}
+
+.str1{
+    
+    transform: translate(0,-50%) rotate(-20deg);
+}
+.str2{
+    
+    transform: translate(0,-50%) rotate(-10deg);
+}
+.str3{
+    
+    transform: translate(0,-50%) rotate(0deg);
+}
+.str4{
+    
+    transform: translate(0,-50%) rotate(10deg);
+}
+.str5{
+    
+    transform: translate(0,-50%) rotate(20deg);
+}
+
+.first{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+.smi-cir{
+    height: 1vw;
+    width: 1vw;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    right: -0.5vw;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.second{
+    opacity: 0.5;
+    width: 50%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    padding-left: 50px;
+    /* justify-content: space-around; */
+}
+.second h1{
+    font-size: 2vw;
+    color: black;
+}
+.second h4{
+    font-size: 1.5vw;
+    color: black;
+}
+
+
+.point{
+    width: 5vw;
+    height: 20vw;
+    /* background-color: red; */
+    position: absolute;
+    right: 1vw;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.dot{
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot:hover{
+    scale: 1.1;
+}
+.dot h1{
+    font-size: 25px;
+    color: #fff;
+}
+
+
